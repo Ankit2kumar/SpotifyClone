@@ -1,0 +1,35 @@
+body{
+    background-image: linear-gradient(to right, rgb(31, 43, 65) , rgb(4, 6, 19));
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(240, 240, 240);
+}
+
+#home-title-one {
+    padding-bottom: 15px;
+}
+
+#home-title-two{
+    padding-bottom: 15px;
+}
+
+h2{
+    font-weight: bold;
+}
+
+#home-main-container-one{
+    padding: 10px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+#home-main-container-two{
+    padding: 10px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.album-artist{
+    align-items: center;
+}
+
