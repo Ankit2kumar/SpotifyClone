@@ -1,0 +1,13 @@
+h2 {
+  font-weight: 700;
+  font-size: 0.8rem;
+  max-width: 200px;
+}
+
+.red-bord {
+  border: solid 1px red;
+}
+
+div.song p {
+  margin: 0px;
+}
