@@ -79,8 +79,9 @@ span.highlight:hover {
 }
 p.pNumber {
   color: rgb(144, 146, 142);
-  font-size: 0.7rem;
-  font-weight: 600;
+  font-size: 0.55rem;
+  font-weight: 650;
+  letter-spacing: 0.05rem;
   margin-bottom: 1rem !important;
 }
 .highlight:hover:after {
