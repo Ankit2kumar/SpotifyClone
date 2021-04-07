@@ -16,6 +16,10 @@
       integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" 
       crossorigin="anonymous"
     /> 
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
     <title>Artist Page</title>
   </head>
   <body>
@@ -33,14 +37,14 @@
                 <button type="button" class="btn btn-outline-light px-5 mr-3 " >FOLLOW</button>
                 <i class="fas fa-ellipsis-h d-none d-sm-inline-block text-center pt-2"></i>
             </div>
-            <div class=" d-none d-md-flex container-fluid  justify-content-center z1"style="color: white; position:absolute ;bottom:-7rem;left:-1rem" >     
-          <span class="mr-sm-3 text-muted highlight z1 ">OVERVIEW</span>
-          <span class=" mr-sm-3 text-muted highlight ">RELATED ARTISTS</span>
-          <span class="text-muted highlight ">ABOUT</span>
-           </div>
+           
             
          </div>
-      
+       <div class=" d-none d-md-flex container-fluid  justify-content-center z1"style="color: white; position:absolute ;bottom:1rem;left:-1rem" >     
+              <span class="mr-sm-3  highlight z1 ">OVERVIEW</span>
+              <span class=" mr-sm-3  highlight ">RELATED ARTISTS</span>
+              <span class=" highlight ">ABOUT</span>
+           </div>
       
     </div>     
     </div>
@@ -50,16 +54,60 @@
 
 
     <main>
-        <div class="container">
-            <div class="row">
-                <h2 style="color: white;">Albums</h2>
-                <div class="col-2">
-
+        <div class="container album-container">
+          <h2 class="albums mt-2">Albums</h2>
+            <div class="row">              
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <img src="https://images-na.ssl-images-amazon.com/images/I/91Ph%2BuTyyxL._AC_SX679_.jpg" alt="" class="img-fluid albumImg">
+                  <p class="title text-center mb-1 mt-2"> Bohemian Rhapsody (The Original Soundtrack)</p>
+                  <p class=" text-center artist"> Queen</p>
                 </div>
-                <div class="col-2"></div>
-                <div class="col-2"></div>
-                <div class="col-2"></div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/On_Air_%28album%29.jpg" alt="" class="img-fluid albumImg">
+                  <p class="title text-center mb-1 mt-2"> On Air</p>
+                  <p class=" text-center artist"> Queen</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <img src="https://discobole.gr/images/thumbnails/465/465/detailed/122/A_NIGHT_AT_THE_ODEON.jpg" alt="" class="img-fluid albumImg">
+                  <p class="title text-center mb-1 mt-2"> A Night At The Odeon</p>
+                  <p class=" text-center artist"> Queen</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <img src="https://discobole.gr/images/thumbnails/465/465/product/64/queen_live_at_the_rainbow.jpg" alt="" class="img-fluid albumImg">
+                  <p class="title text-center mb-1 mt-2"> Live At The Rainbow</p>
+                  <p class=" text-center artist"> Queen</p>
+                </div>
+                <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <img src="https://discobole.gr/images/thumbnails/465/465/product/64/queen_live_at_the_rainbow.jpg" alt="" class="img-fluid albumImg">
+                  <p class="title text-center mb-1 mt-2"> Live At The Rainbow (Deluxe)</p>
+                  <p class=" text-center artist"> Queen</p>
+                </div>
+                <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <img src="https://upload.wikimedia.org/wikipedia/el/thumb/a/aa/Queen_-_Hungarian_Rhapsody.jpg/220px-Queen_-_Hungarian_Rhapsody.jpg" alt="" class="img-fluid albumImg">
+                  <p class="title text-center mb-1 mt-2"> Hungarian Rhapsody (Live in Budapest/1986)</p>
+                  <p class=" text-center artist"> Queen</p>
+                </div>
             </div>
+            <div class="row">              
+              <div class="col-12 col-sm-6 col-md-2 ">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/91Ph%2BuTyyxL._AC_SX679_.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-12 col-sm-6 col-md-2 ">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/On_Air_%28album%29.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-12 col-sm-6 col-md-2 ">
+                <img src="https://discobole.gr/images/thumbnails/465/465/detailed/122/A_NIGHT_AT_THE_ODEON.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-12 col-sm-6 col-md-2 ">
+                <img src="https://discobole.gr/images/thumbnails/465/465/product/64/queen_live_at_the_rainbow.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-12 col-sm-6 col-md-2 ">
+                <img src="https://discobole.gr/images/thumbnails/465/465/product/64/queen_live_at_the_rainbow.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-12 col-sm-6 col-md-2 ">
+                <img src="https://upload.wikimedia.org/wikipedia/el/thumb/a/aa/Queen_-_Hungarian_Rhapsody.jpg/220px-Queen_-_Hungarian_Rhapsody.jpg" alt="" class="img-fluid">
+              </div>
+          </div>
         </div>
     </main>
 
