@@ -19,14 +19,15 @@ header::after {
   bottom: 0;
   min-height: 100%;
   min-width: 100%;
+  z-index: 10;
 }
 header::after {
   content: "";
-  background: rgb(18, 18, 18);
+
   background: linear-gradient(
     0deg,
-    rgba(18, 18, 18, 1) 47%,
-    rgba(18, 18, 18, 0.5746673669467788) 100%
+    rgba(18, 18, 18, 1) 13%,
+    rgba(18, 18, 18, 0) 101%
   );
   position: absolute;
   bottom: -1px;
