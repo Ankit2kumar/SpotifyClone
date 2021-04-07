@@ -1,35 +1,79 @@
-body{
-    background-image: linear-gradient(to right, rgb(31, 43, 65) , rgb(4, 6, 19));
+#home-body{
+    background-color: black; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, rgb(64, 91, 111), rgb(0, 1, 39));
+    background-repeat: no-repeat;
     margin: 0;
-    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
     color: rgb(240, 240, 240);
+    opacity: 0.9;
 }
 
-#home-title-one {
-    padding-bottom: 15px;
-}
+#home-nav{
+    margin-top: 10px;
 
-#home-title-two{
-    padding-bottom: 15px;
 }
-
-h2{
-    font-weight: bold;
+.nav-item{
+    padding-left:14px;
+    padding-right:14px;
+    letter-spacing: 1px;
+    font-size: x-small;
+    font-weight: bolder;
 }
 
 #home-main-container-one{
     padding: 10px;
     margin: 0px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 #home-main-container-two{
     padding: 10px;
     margin: 0px;
-    margin-top: 10px;
+    margin-top: 15px;
+}
+
+#home-title-one{
+    padding-bottom: 15px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+#home-title-two{
+    padding-bottom: 15px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+
+.album-container{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding: 0;
+    font-size: small;
+    position: relative;   
+}
+
+#logo{
+    position: absolute;
+}
+
+.album-container:hover{
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .album-artist{
     align-items: center;
+}
+
+.img-fluid{
+    margin-bottom: 8px; 
 }
 
