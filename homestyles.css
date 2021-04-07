@@ -1,6 +1,6 @@
 #home-body{
     background-color: black; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to bottom right, rgb(64, 91, 111), rgb(0, 1, 39));
+    background-image: linear-gradient(to bottom right, rgb(40, 72, 114), rgb(0, 0, 0));
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
@@ -12,13 +12,14 @@
 
 #home-nav{
     margin-top: 10px;
+    text-align: center;
 
 }
 .nav-item{
     padding-left:14px;
     padding-right:14px;
     letter-spacing: 1px;
-    font-size: x-small;
+    font-size: xx-small;
     font-weight: bolder;
 }
 
@@ -31,18 +32,18 @@
 #home-main-container-two{
     padding: 10px;
     margin: 0px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 #home-title-one{
-    padding-bottom: 15px;
-    margin-left: 8px;
+    padding-bottom: 10px;
+    margin-left: 5px;
     font-weight: bold;
 }
 
 #home-title-two{
-    padding-bottom: 15px;
-    margin-left: 8px;
+    padding-bottom: 10px;
+    margin-left: 5px;
     font-weight: bold;
 }
 
@@ -51,15 +52,20 @@
     background-color: transparent;
     border: none;
     text-align: center;
-    margin-right: 8px;
-    margin-left: 8px;
+    margin-right: 5px;
+    margin-left: 5px;
     padding: 0;
-    font-size: small;
+    font-size: x-small;
+    font-weight: bolder;
     position: relative;   
 }
 
 #logo{
     position: absolute;
+    height: 20px;
+    width: 22px;
+    padding-top: 2px;
+    opacity: 0.9;
 }
 
 .album-container:hover{
