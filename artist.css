@@ -57,6 +57,9 @@ div .btn:hover {
   border: none;
   background-color: rgb(29, 185, 84);
 }
+button.darkBtn {
+  background-color: rgb(0, 0, 0, 0.6);
+}
 /* .red {
   border: solid 1px red;
 } */
