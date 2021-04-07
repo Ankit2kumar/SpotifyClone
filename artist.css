@@ -68,6 +68,9 @@ span.highlight:hover {
   color: white !important;
   cursor: pointer;
 }
+p.pNumber {
+  color: rgb(144, 146, 142);
+}
 .highlight:hover::after {
   content: "";
   position: absolute;
