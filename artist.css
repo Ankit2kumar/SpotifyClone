@@ -1,5 +1,7 @@
 body {
-  background-color: rgb(24, 24, 24);
+  background-color: #121212;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(240, 240, 240);
 }
 header {
   background-image: url(https://www.queenonline.com/global/uploads/86.jpg);
@@ -28,6 +30,7 @@ header::after {
 
 .h1Artist {
   color: white;
+  font-weight: 700;
 }
 
 i {
