@@ -23,6 +23,7 @@ const playPause = () => {
 
 const update = () => {
     slider.value = (song.currentTime * 100) / song.duration 
+    slider.style.background = 'linear-gradient(to right, #1db954 0%, #1db954 '+slider.value +'%, black ' + slider.value + '%, black 100%)'
     
     let currMin = Math.floor(song.currentTime / 60);
     let currSec = Math.floor(song.currentTime - currMin * 60);
@@ -40,8 +41,10 @@ const update = () => {
 
 const sliderToCurrTime = () => {
     song.currentTime = (song.duration * slider.value) / 100
+    update()
 }
 
 playPauseBtn.onclick = playPause
-slider.onchange = sliderToCurrTime
-setInterval(update, 1000);
+slider.onchange = sliderToCurrTime; update;
+setInterval(update, 500)
+

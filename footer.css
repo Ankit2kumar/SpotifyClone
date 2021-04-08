@@ -55,6 +55,7 @@
   border-radius: 10px;
   transition: opacity 0.2s;
   width: 70%;
+  cursor: pointer;
 }
 
 .slider::-webkit-slider-thumb {
@@ -75,4 +76,20 @@
 
 input:focus {
   outline: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+.far:hover {
+  color: white;
+}
+
+.far:active {
+  color: rgb(66, 66, 66);
+}
+
+.fas:hover {
+  color: white;
 }
