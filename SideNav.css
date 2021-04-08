@@ -13,6 +13,11 @@ body {
 a {
   color: rgb(211, 211, 211);
 }
+.bottom_navbar {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+}
 
 .lower_icons {
   position: absolute;
