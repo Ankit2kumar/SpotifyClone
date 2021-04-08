@@ -116,6 +116,9 @@ p.artist {
   font-weight: 500;
   font-size: 0.8rem;
 }
+/* p.dots {
+  font-size: 2rem;
+} it was for making the dots with the keyboard */
 h2.albums {
   color: white;
   font-weight: 700;
