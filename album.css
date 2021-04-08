@@ -1,7 +1,20 @@
+body {
+  background: rgb(45, 45, 45);
+  background: linear-gradient(
+    152deg,
+    rgba(45, 45, 45, 1) 0%,
+    rgba(26, 26, 26, 1) 26%,
+    rgba(19, 19, 19, 1) 60%,
+    rgba(0, 0, 0, 1) 74%
+  );
+  font-family: "Montserrat", sans-serif;
+  color: rgb(240, 240, 240);
+}
+
 h2 {
   font-weight: 700;
-  font-size: 0.8rem;
-  max-width: 200px;
+  font-size: 1.3rem;
+  max-width: 260px;
 }
 
 .red-bord {
@@ -10,4 +23,35 @@ h2 {
 
 div.song p {
   margin: 0px;
+}
+
+.cover {
+  height: 260px;
+  width: 260px;
+}
+
+.content-page {
+  height: 224px;
+  overflow: auto;
+  height: 100vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(94, 94, 94);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(136, 136, 136);
 }
