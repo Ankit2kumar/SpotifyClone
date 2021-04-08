@@ -8,11 +8,13 @@
     font-weight: 700;
     color: rgb(240, 240, 240);
     opacity: 0.9;
+    min-height: 100vh;
 }
 
 #home-nav{
-    margin-top: 10px;
+    padding-top: 10px;
     text-align: center;
+    
 
 }
 .nav-item{
@@ -25,28 +27,39 @@
     position: relative;
 }
 
-.nav-link::after{/*<-----------------------------------------------*/
+.nav-link::after{/*<----------------------------HWYWHWYHWYWYYWWYYYYYYYYYYYY! :@-------------------*/
     content: "";
     position: absolute;
-    background-color: rgb(18, 167, 70);
-    width: 40%;
+    background-color: rgb(36, 160, 67);
+    width: 0%;
     height: 2px;
     bottom: 0px;
-    left: 30%;
+    left: 50%;
     opacity: 1;
+    transition: all 0.7s ease;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+    width: 40%;
+    left: 30%;
+}
+
+#home-main-container-trending-one{
+    padding: 10px;
+    margin: 0px;
+    margin-top: 15px; 
     
 }
 
-#home-main-container-one{
-    padding: 10px;
-    margin: 0px;
-    margin-top: 15px;
-}
-
-#home-main-container-two{
+#home-main-container-trending-two{
     padding: 10px;
     margin: 0px;
     margin-top: 10px;
+}
+
+#home-podcast-content{
+    display: none;
 }
 
 #home-title-one{
