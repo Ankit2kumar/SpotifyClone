@@ -11,21 +11,32 @@ header {
   z-index: 2;
   height: 40vh;
 }
-header::after {
+
+.bg-image {
+  position: absolute;
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.27);
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+#header::after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(46, 44, 44, 0.1);
   position: absolute;
   bottom: 0;
+  left: 0;
   min-height: 100%;
   min-width: 100%;
   z-index: 10;
 }
-header::after {
+div.header::after {
   content: "";
-
   background: linear-gradient(
     0deg,
-    rgba(18, 18, 18, 1) 13%,
+    rgba(18, 18, 18, 1) 2%,
     rgba(18, 18, 18, 0) 101%
   );
   position: absolute;
@@ -36,8 +47,9 @@ header::after {
 
 .h1Artist {
   color: white;
-  font-weight: 750;
+  font-weight: 800;
   font-size: 3.1rem;
+  /* letter-spacing: -0.1rem; */
 }
 
 i {
@@ -49,8 +61,10 @@ div .btn {
   font-size: 0.5rem;
   font-weight: 600;
   letter-spacing: 00.05rem;
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
+  padding-left: 2.3rem !important;
+  padding-right: 2.3rem !important;
+  padding-top: 0.5rem !important ;
+  padding-bottom: 0.5rem !important ;
 }
 div .btn:hover {
   color: white;
@@ -60,17 +74,20 @@ div .btn:hover {
 button.darkBtn {
   background-color: rgb(0, 0, 0, 0.6);
 }
-/* .red {
+.red {
   border: solid 1px red;
-} */
+}
 .z1 {
   z-index: 9999;
+}
+.z10 {
+  z-index: 99999;
 }
 span.highlight {
   color: rgb(148, 153, 152);
   letter-spacing: 0.05rem;
   font-weight: 750;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   position: relative;
 }
 span.highlight:hover {
@@ -79,12 +96,12 @@ span.highlight:hover {
 }
 p.pNumber {
   color: rgb(144, 146, 142);
-  font-size: 0.55rem;
-  font-weight: 650;
-  letter-spacing: 0.05rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
   margin-bottom: 1rem !important;
 }
-.highlight:hover:after {
+.highlight:hover::after {
   content: "";
   position: absolute;
   background-color: rgb(29, 185, 84);
@@ -92,6 +109,18 @@ p.pNumber {
   height: 2px;
   bottom: -2px;
   left: 30%;
+}
+span.underline::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(29, 185, 84);
+  width: 40%;
+  height: 2px;
+  bottom: -2px;
+  left: 30%;
+}
+span.underline {
+  color: white !important;
 }
 p.title {
   font-weight: 600;
@@ -102,18 +131,169 @@ p.artist {
   font-weight: 500;
   font-size: 0.8rem;
 }
+/* p.dots {
+  font-size: 2rem;
+} it was for making the dots with the keyboard */
 h2.albums {
   color: white;
   font-weight: 700;
 }
 .albumImg:hover {
-  opacity: 1;
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 10px white);
 }
 .albumImg {
   transition: 0.3s;
 }
 main.mainMarg {
-  margin-top: 5rem;
+  margin-top: 1rem;
+}
+
+/*--------------------------------------------------------------------------------------- FROM NOW ON CSS OF THE NAV BAR ------------------------------------------------------------------*/
+.vertical_navbar {
+  background-color: black;
+
+  /* position: absolute;
+  left: 0%; */
+  /* min-width: 250px; */
+  /* transform: translateX(-100%); */
+  /* transition: all 1s ease; */
+}
+a {
+  color: rgb(211, 211, 211);
+}
+.bottom_navbar {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+}
+
+.lower_icons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  list-style-type: none;
+}
+
+/*
+list-style: none // default is disc
+ul padding to 0
+*/
+a:hover {
+  color: white;
+}
+/* hr {
+	/* height: 2px; */
+/* border-bottom: 2px solid white; */
+/* } */
+div.try:after {
+  content: "";
+  position: absolute;
+  background-color: grey;
+  left: 8%;
+  width: 15vw;
+  height: 1px;
+  bottom: 2rem;
+  /*left: 30%; */
+}
+#related img {
+  height: 150px !important;
+  width: 150px !important;
+}
+/*--------------------------------------------------------------------------------------- FROM NOW ON CSS OF THE PLAYER ------------------------------------------------------------------*/
+.red-bor {
+  border: 1px solid red;
+}
+
+.bg-grey {
+  background-color: rgb(68, 68, 68);
+}
+
+.fixed-bottom p {
+  margin: 0px;
+}
+
+.icon-grey-text {
+  font-weight: 600;
+  color: rgb(155, 155, 155);
+  font-size: 10px;
+}
+
+.icon-grey-lg {
+  font-weight: 600;
+  color: rgb(155, 155, 155);
+  font-size: 22px;
+}
+
+.px-45 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.line {
+  height: 2px;
+  width: 70%;
+  background-color: rgb(87, 87, 87);
+  border-radius: 2px;
+}
+
+.line-sm {
+  height: 2px;
+  width: 25%;
+  background-color: rgb(179, 179, 179);
+  border-radius: 2px;
+}
+
+.to-bottom {
+  bottom: 0px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 3px;
+  background: black;
+  opacity: 0.7;
+  border-radius: 10px;
+  transition: opacity 0.2s;
+  width: 70%;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider:hover {
+  opacity: 1;
+  background-color: #1db954;
+}
+
+input:focus {
+  outline: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+.far:hover {
+  color: white;
+}
+
+.far:active {
+  color: rgb(66, 66, 66);
+}
+
+.fas:hover {
+  color: white;
 }
