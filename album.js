@@ -1,4 +1,4 @@
-let parentDivs = document.querySelectorAll('body > div > div > div > div.col-8.rd > div')
+let parentDivs = document.querySelectorAll('body > div > div > div > div.col-12.col-md-8 > div')
 // console.log(parentDivs[0].firstElementChild.innerHTML)
 
 const changeToPlay = (e) => {
