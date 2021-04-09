@@ -10,6 +10,7 @@
     <!-- My personal CSS Link  -->
      <link rel="stylesheet" href="artist.css"> 
      <link rel="stylesheet" href="footer.css"> 
+     <link rel="stylesheet" href="album.css"> 
      <!--  Font awsome link for the icons  -->
     <link
       rel="stylesheet"
@@ -82,7 +83,7 @@
 						</li>
 					</ul>
 
-					<div class=" try" style="position: absolute; bottom:15%;left: 0;">
+					<div class=" try d-none d-lg-block" style="position: absolute; bottom:15%;left: 0;">
 						<ul class="px-1">
 							<li class="nav-item">
 								<a class="nav-link " href="#"
@@ -98,7 +99,7 @@
 						<hr />
             
 					</div>
-           <div  style="position: absolute;bottom: 14%;left: 2%;"> <img class=" mx-2" style="height: 2.1rem;width: 2.1rem;" src="https://www.nj.com/resizer/zovGSasCaR41h_yUGYHXbVTQW2A=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/SJGKVE5UNVESVCW7BBOHKQCZVE.jpg" class="img-fluid rounded" alt="">
+           <div class="d-none d-lg-block" style="position: absolute;bottom: 14%;left: 2%;"> <img class=" mx-2" style="height: 2.1rem;width: 2.1rem;" src="https://www.nj.com/resizer/zovGSasCaR41h_yUGYHXbVTQW2A=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/SJGKVE5UNVESVCW7BBOHKQCZVE.jpg" class="img-fluid rounded" alt="">
                   <span style="font-size: 0.7rem;font-weight: 700;">Diego "Ziba" Banovaz </span> </div>
 				</div>
         </div>
@@ -290,97 +291,83 @@
     </main>
               </div>
 
-               <nav class="d-none d-sm-block fixed-bottom bg-grey px-2 pt-2 pb-1">
-      <div class="row">
-        <div class="col-3">
-          <div class="d-flex">
-            <div class="ml-2 mr-2">
-              <img
-                class="cover-sm"
-                src="https://m.media-amazon.com/images/I/812nvM0bG-L._SS500_.jpg"
-                alt=""
-              />
-            </div>
-            <div class="d-flex">
-              <div class="max-height">
-                <p class="small-white-text">The house of the rising sun</p>
-                <p class="smallest-grey-text">The Doors</p>
-              </div>
-            </div>
-            <div class="d-flex align-items-center icon-grey-text">
-              <i class="far fa-heart pl-3 pr-3 d-none d-lg-block"></i>
-              <i class="far fa-window-maximize d-none d-lg-block"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 text-center">
-          <div class="row pt-1 pb-0">
-            <div class="col-12 pb-2 d-flex justify-content-center">
-              <div
-                class="d-flex px-4 justify-content-between align-items-center icon-grey-text"
-              >
-                <i class="fas fa-random mx-2"></i>
-                <i class="fas fa-step-backward mx-2"></i>
-                <div class="play-pause mx-2">
-                  <i class="far fa-play-circle icon-grey-lg mx-2"></i>
+              <nav class="d-none d-sm-block fixed-bottom bg-grey px-2 pt-2 pb-1">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="d-flex">
+                      <div class="ml-2 mr-2">
+                        <img class="cover-sm" src="https://m.media-amazon.com/images/I/812nvM0bG-L._SS500_.jpg" alt="" />
+                      </div>
+                      <div class="d-flex">
+                        <div class="max-height">
+                          <p class="small-white-text">The house of the rising sun</p>
+                          <p class="smallest-grey-text">The Doors</p>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center icon-grey-text">
+                        <i class="far fa-heart pl-3 pr-3 d-none d-lg-block"></i>
+                        <i class="far fa-window-maximize d-none d-lg-block"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 text-center">
+                    <div class="row pt-1 pb-0">
+                      <div class="col-12 pb-2 d-flex justify-content-center">
+                        <div class="d-flex px-4 justify-content-between align-items-center icon-grey-text">
+                          <i class="fas fa-random mx-2"></i>
+                          <i class="fas fa-step-backward mx-2"></i>
+                          <div class="play-pause mx-2">
+                            <i class="far fa-play-circle icon-grey-lg mx-2"></i>
+                          </div>
+                          <i class="fas fa-step-forward mx-2"></i>
+                          <i class="fas fa-redo-alt mx-2"></i>
+                        </div>
+                      </div>
+            
+                      <div class="col-12 to-bottom d-flex justify-content-center align-items-center">
+                        <p class="smallest-grey-text mr-1 current-time">00.00</p>
+                        <input type="range" min="1" max="100" value="0" class="slider" />
+                        <p class="smallest-grey-text ml-1 total-duration">04.16</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 d-flex justify-content-end align-items-center text-right icon-grey-text">
+                    <i class="fas fa-list mx-1"></i>
+                    <i class="far fa-window-restore mx-1"></i>
+                    <i class="fas fa-volume-up mx-1"></i>
+                    <div class="line-sm mr-2 ml-1"></div>
+                  </div>
                 </div>
-                <i class="fas fa-step-forward mx-2"></i>
-                <i class="fas fa-redo-alt mx-2"></i>
-              </div>
-            </div>
-
-            <div
-              class="col-12 to-bottom d-flex justify-content-center align-items-center"
-            >
-              <p class="smallest-grey-text mr-1 current-time">00.00</p>
-              <input type="range" min="1" max="100" value="0" class="slider" />
-              <p class="smallest-grey-text ml-1 total-duration">04.16</p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-3 d-flex justify-content-end align-items-center text-right icon-grey-text"
-        >
-          <i class="fas fa-list mx-1"></i>
-          <i class="far fa-window-restore mx-1"></i>
-          <i class="fas fa-volume-up mx-1"></i>
-          <div class="line-sm mr-2 ml-1"></div>
-        </div>
-      </div>
-    </nav>
-    <nav class="d-sm-none fixed-bottom bg-grey">
-      <div class="row">
-        <div class="col-8">
-          <div class="d-flex">
-            <div class="ml-2 mr-2">
-              <img
-                class="cover-sm"
-                src="https://m.media-amazon.com/images/I/812nvM0bG-L._SS500_.jpg"
-                alt=""
-              />
-            </div>
-            <div class="d-flex">
-              <div class="max-height">
-                <p class="small-white-text">The house of the rising sun</p>
-                <p class="smallest-grey-text">The Doors</p>
-              </div>
-            </div>
-            <div class="d-flex align-items-center icon-grey-text">
-              <i class="far fa-heart pl-3 pr-3 d-none d-lg-block"></i>
-              <i class="far fa-window-maximize d-none d-lg-block"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 d-flex justify-content-end align-items-center">
-                <i class="far fa-heart mx-2 icon-grey-lgs"></i>
-                <div class="play-pause mr-3 ml-4 icon-grey-lg">
-                  <i class="fas fa-play"></i>
+              </nav>
+              <nav style="position:fixed;bottom:7.7%;left:0;width: 100%;" class=" d-sm-none text-center bg-grey">
+                <div class="row">
+                  <div class="col-8">
+                    <div class="d-flex">
+                      <div class="ml-2 mr-2">
+                        <img class="cover-sm" src="https://m.media-amazon.com/images/I/812nvM0bG-L._SS500_.jpg" alt="" />
+                      </div>
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="small-white-text text-center">The house of the rising sun</p>
+                          <p class="smallest-grey-text">The Doors</p>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center icon-grey-text">
+                        <i class="far fa-heart pl-3 pr-3 d-none d-lg-block"></i>
+                        <i class="far fa-window-maximize d-none d-lg-block"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 d-flex justify-content-end align-items-center">
+                    <i class="far fa-heart mx-2 icon-grey-lgs"></i>
+                    <div class="play-pause mr-3 ml-4 icon-grey-lg">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
                 </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+                </div>
+                </div>
+              </nav>
          <!----------------------------------------------------------------------------- PLAYER-------------------------------------------------------------------------------------------->
     <!-- <nav class="fixed-bottom bg-grey p-1 z10 col-12 " style="border-color: rgb( 40, 40,40);">
       <div class="row">
