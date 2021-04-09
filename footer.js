@@ -13,11 +13,11 @@ const playPause = () => {
     if (!isPlaying) {
         song.play()
         isPlaying = true
-        playPauseBtn.innerHTML = '<i class="far fa-pause-circle icon-grey-lg"></i>'
+        playPauseBtn.innerHTML = '<i class="far fa-pause-circle icon-grey-lg mx-2"></i>'
     } else {
         song.pause();
         isPlaying = false   
-        playPauseBtn.innerHTML = '<i class="far fa-play-circle icon-grey-lg"></i>' 
+        playPauseBtn.innerHTML = '<i class="far fa-play-circle icon-grey-lg mx-2"></i>' 
     }
 }
 

@@ -47,7 +47,7 @@ div.song p {
   cursor: pointer;
 }
 
-body > div > div > div > div.col-8.rd > div:hover {
+body > div > div > div > div.col-12.col-md-8 > div:hover {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     152deg,
@@ -56,12 +56,12 @@ body > div > div > div > div.col-8.rd > div:hover {
   );
 }
 
-body > div > div > div > div.col-8.rd > div {
+body > div > div > div > div.col-12.col-md-8 > div {
   cursor: pointer;
 }
 
 .max-height {
-  max-height: 50px;
+  max-height: 45px;
   overflow-wrap: break-word;
 }
 
