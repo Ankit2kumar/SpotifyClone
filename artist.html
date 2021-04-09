@@ -92,9 +92,9 @@
           </div>    
         </div>
          <div class="  d-flex container-fluid  justify-content-center  z1"style="color: white;" >     
-            <span class="mr-2 mr-sm-3 highlight"> OVERVIEW</span>
-            <span class="mr-2 mr-sm-3 highlight ">RELATED ARTISTS</span>
-            <span class=" highlight ">ABOUT</span>
+            <span id="over1" onclick="click1()" class="mr-2 mr-sm-3 highlight "> OVERVIEW</span>
+            <span id="related2" class="mr-2 mr-sm-3 highlight ">RELATED ARTISTS</span>
+            <span id="about3" class=" highlight ">ABOUT</span>
          </div>          
      </div>     
    </div>
@@ -113,15 +113,15 @@
           </div>    
        </div>
          <div class="  d-none d-sm-flex container-fluid  justify-content-center z1"style="color: white; position:absolute ;bottom: 1.7rem;left:-1rem" >     
-            <span class="mr-2 mr-sm-3  highlight z1 ">OVERVIEW</span>
-            <span class="mr-2 mr-sm-3  highlight ">RELATED ARTISTS</span>
-            <span class=" highlight ">ABOUT</span>
+            <span id="over1" onclick="click1()" class="mr-2 mr-sm-3  highlight z1  ">OVERVIEW</span>
+            <span id="related2" class="mr-2 mr-sm-3  highlight ">RELATED ARTISTS</span>
+            <span id="about3" class=" highlight ">ABOUT</span>
          </div>          
      </div>     
     </div>
 
 <!----------------------------------------------------------------------------- MAIN SECTION (ALBUMS)-------------------------------------------------------------------------------------------->
-   <main class="mainMarg px-0  mx-0  px-lg-5 mx-lg-5">
+   <main id="overview" class="mainMarg px-0  mx-0  px-lg-5 mx-lg-5">
        <div class="container album-container  ">
          <h2 class="albums mt-5 pt-4 pt-sm-0 mb-2 m-sm-2  ">Albums</h2>
            <div class="row mt-0 mt-sm-4" >              
@@ -191,6 +191,142 @@
           
        </div>
    </main>
+   <main id="related" class="d-none mainMarg px-0  mx-0  px-lg-5 mx-lg-5">
+    <div class="container album-container  ">
+      <h2 class="albums mt-5 pt-4 pt-sm-0 mb-2 m-sm-2  ">Related Artists</h2>
+        <div class="row mt-0 mt-sm-4" >              
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+              <img src="https://s3.r29static.com/bin/entry/c36/340x408,85/2059585/image.webp" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+              <p class="title text-center mt-4 mb-1 mt-md-2"> Freddie Mercury</p>          
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0  pl-sm-2">
+              <img src="https://pbs.twimg.com/profile_images/956225427135221765/oEPnGrkJ_400x400.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+              <p class="title text-center mt-4 mb-1 mt-md-2"> Elton John</p>        
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2">
+              <img src="https://img.discogs.com/c-4g3iNqbcpuulaNpawjOoyVje0=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-8685628-1466594128-3723.jpeg.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+              <p class="title text-center  mt-4 mb-1 mt-md-2"> Electric Light Orchestra</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+              <img src="https://pbs.twimg.com/profile_images/1095334210078830594/5R6X93ge_400x400.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+              <p class="title text-center mt-4 mb-1 mt-md-2"> Aerosmith</p>             
+            </div>
+            <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+              <img src="https://ychef.files.bbci.co.uk/1600x900/p01j3jyb.webp" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+              <p class="title text-center mt-4 mb-1 mt-md-2"> David Bowie</p>
+              
+            </div>
+            <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+              <img src="https://pbs.twimg.com/profile_images/1346068274069573633/ejn6YsCP_400x400.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+              <p class="title text-center  mt-4 mb-1 mt-md-2"> The Who</p>
+              
+            </div>
+        </div>
+        <div class="row mt-4">              
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61WM3RGcyTL._AC_SL1000_.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+            <p class="title text-center mt-4 mb-1 mt-md-2"> Kiss</p>
+            
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0  pl-sm-2">
+            <img src="https://www.millerbarondess.com/wp-content/uploads/2020/03/JOURNEYLOGO-e1617391358894.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+            <p class="title text-center mt-4 mb-1 mt-md-2">Journey</p>
+            
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2">
+            <img src="https://www.rollingstone.com/wp-content/uploads/2020/10/van-halen-charts.jpg?resize=1800,1200&w=1200" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+            <p class="title text-center  mt-4 mb-1 mt-md-2"> Van Halen</p>
+            
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Supertramp1971.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+            <p class="title text-center mt-4 mb-1 mt-md-2"> Supertramp</p>
+           
+          </div>
+          <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+            <img src="https://www.rockrooster.gr/wp-content/uploads/2017/07/Led-Zeppelin.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+            <p class="title text-center mt-4 mb-1 mt-md-2">Led Zeppelin</p>
+            
+          </div>
+          <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+            <img src="https://i.pinimg.com/originals/bb/f4/a9/bbf4a9238cd7133b6d9c842ec25e0658.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+            <p class="title text-center  mt-4 mb-1 mt-md-2"> Toto</p>
+            
+          </div>
+      </div>
+       
+    </div>
+</main>
+<main id="about" class="mainMarg px-0  mx-0  px-lg-5 mx-lg-5 d-none">
+  <div class="container album-container  ">
+    <h2 class="albums mt-5 pt-4 pt-sm-0 mb-2 m-sm-2  ">About</h2>
+      <div class="row mt-0 mt-sm-4" >              
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91Ph%2BuTyyxL._AC_SX679_.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+            <p class="title text-center mt-4 mb-1 mt-md-2"> Bohemian Rhapsody (The Original Soundtrack)</p>
+            <p class=" text-center artist"> Queen</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0  pl-sm-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/On_Air_%28album%29.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+            <p class="title text-center mt-4 mb-1 mt-md-2"> On Air</p>
+            <p class=" text-center artist"> Queen</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2">
+            <img src="https://discobole.gr/images/thumbnails/465/465/detailed/122/A_NIGHT_AT_THE_ODEON.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+            <p class="title text-center  mt-4 mb-1 mt-md-2"> A Night At The Odeon</p>
+            <p class=" text-center artist"> Queen</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+            <img src="https://discobole.gr/images/thumbnails/465/465/product/64/queen_live_at_the_rainbow.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+            <p class="title text-center mt-4 mb-1 mt-md-2"> Live At The Rainbow</p>
+            <p class=" text-center artist"> Queen</p>
+          </div>
+          <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+            <img src="https://discobole.gr/images/thumbnails/465/465/product/64/queen_live_at_the_rainbow.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+            <p class="title text-center mt-4 mb-1 mt-md-2"> Live At The Rainbow (Deluxe)</p>
+            <p class=" text-center artist"> Queen</p>
+          </div>
+          <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+            <img src="https://upload.wikimedia.org/wikipedia/el/thumb/a/aa/Queen_-_Hungarian_Rhapsody.jpg/220px-Queen_-_Hungarian_Rhapsody.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+            <p class="title text-center  mt-4 mb-1 mt-md-2"> Hungarian Rhapsody (Live in Budapest/1986)</p>
+            <p class=" text-center artist"> Queen</p>
+          </div>
+      </div>
+      <div class="row mt-4">              
+        <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/718Tl9GcmEL._SX355_.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+          <p class="title text-center mt-4 mb-1 mt-md-2"> The Cosmos Rocks (+ Paul Rodgers)</p>
+          <p class=" text-center artist"> Queen</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0  pl-sm-2">
+          <img src="https://secure.img1-fg.wfcdn.com/im/15765747/resize-h600-w600%5Ecompr-r85/3268/32686551/Queen+%2527Live+at+Wembley%2527+Album+Cover+Framed+Wall+art.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+          <p class="title text-center mt-4 mb-1 mt-md-2">Live At Wembley Stadium</p>
+          <p class=" text-center artist"> Queen</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2">
+          <img src="https://upload.wikimedia.org/wikipedia/en/a/a1/Returnofthechampions.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+          <p class="title text-center  mt-4 mb-1 mt-md-2"> Return Of The Champions</p>
+          <p class=" text-center artist"> Queen</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+          <img src="https://img.discogs.com/nVAmyHtIaoy1qYk_W35IaOenPuQ=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2792506-1301243856.jpeg.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+          <p class="title text-center mt-4 mb-1 mt-md-2"> Live At The Bowl</p>
+          <p class=" text-center artist"> Queen</p>
+        </div>
+        <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+          <img src="https://upload.wikimedia.org/wikipedia/en/e/ea/Queen_News_Of_The_World.png" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+          <p class="title text-center mt-4 mb-1 mt-md-2"> News Of The World</p>
+          <p class=" text-center artist"> Queen</p>
+        </div>
+        <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Queen_The_Miracle.png/220px-Queen_The_Miracle.png" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+          <p class="title text-center  mt-4 mb-1 mt-md-2"> The Miracle</p>
+          <p class=" text-center artist"> Queen</p>
+        </div>
+    </div>
+     
+  </div>
+</main>
                 </div>
 			</div>
 		</div>
@@ -206,6 +342,24 @@
     <script
       src="https://kit.fontawesome.com/ee7b600ed4.js"
       crossorigin="anonymous"
-    ></script>
+    >
+  </script>
+    <!----------------------------------------------------------------------------- MINE JS-------------------------------------------------------------------------------------------->
+    <script>
+        const mainOverview = document.getElementById("overview")
+        const mainRelated = document.getElementById("related")
+        const mainAbout = document.getElementById("about")
+        const spanOverview = document.getElementById("over1")
+        const spanRelated = document.getElementById("related2")
+        const spanAbout = document.getElementById("about3")
+        const click1 = function () {
+          spanOverview.classList.add("underline")
+          spanRelated.classList.remove("underline")
+          spanAbout.classList.remove("underline")
+          mainOverview.classList.add("d-block")
+          mainRelated.classList.add("d-none")
+          mainAbout.classList.add("d-none")        
+        }
+    </script>
   </body>
 </html>
