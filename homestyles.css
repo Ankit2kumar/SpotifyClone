@@ -106,6 +106,25 @@
     box-shadow: 0px 0px 20px 8px rgb(44, 77, 121);
     opacity: 0.9;
 }
+#bieb-button {
+    background-color: #4CAF50; /* Green */
+    border: 2px;
+    border-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    color: rgb(240, 240, 240);
+    opacity: 0.9;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+}
+#bieb-button:hover{
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
 #podcast-image:hover{
     opacity: 1;
     transition: 0.3s;
@@ -177,6 +196,13 @@
     padding-top: 2px;
     top: 80%;
     left: 95%;
+    filter: brightness(1.75);
+}
+#bieb-logo:hover{
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.05);
 }
 #disc-logo{
     position: absolute;
@@ -186,4 +212,26 @@
     opacity: 0.9;
     bottom: 5vw;
     right: 5vw;
+    filter: brightness(1.1);
 }
+#disc-logo:hover{
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+/* 
+#overall-container{
+    display: flex;
+    min-height: 100vh;
+}
+
+#wrapper{
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#music-player{
+    position: fixed;
+    bottom: 0;
+} */
