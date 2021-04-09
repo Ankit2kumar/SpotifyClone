@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- My personal CSS Link  -->
      <link rel="stylesheet" href="artist.css"> 
+     <link rel="stylesheet" href="footer.css"> 
+     <link rel="stylesheet" href="album.css"> 
      <!--  Font awsome link for the icons  -->
     <link
       rel="stylesheet"
@@ -28,7 +30,7 @@
     <ul class="d-flex d-sm-none nav justify-content-between bottom_navbar pt-4 z1 px-5" style="width: 100%;">
       <li class="nav-item text-center">
           <i class="fas fa-home" style="color:rgb( 211, 211, 211);"></i>
-        <a class="nav-link active" href="#"></a>
+        <a class="nav-link active" href="home.html"></a>
       </li>
       <li class="nav-item text-center">
           <i class="fas fa-search" style="color:rgb( 211, 211, 211);"></i>
@@ -47,7 +49,7 @@
 				<div class=" vertical_navbar h-100 d-flex flex-column">
 					<ul class="nav flex-column">
 						<li class="nav-item mt-4 ">
-							<a class="nav-link navbar-brand px-auto  " href="#"
+							<a class="nav-link navbar-brand px-auto  " href=""
 								><img
                 class="img-fluid "
 									src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png"
@@ -56,7 +58,7 @@
 							/></a>
 						</li>
 						<li class="nav-item mt-3 pl-3">
-							<a class="nav-link mt-1" href="#"
+							<a class="nav-link mt-1" href="home.html"
 								><div class="d-inline mr-2"><i class="fas fa-home " ></i></div>
                 <br class="d-block d-md-none">
 								Home</a
@@ -81,7 +83,7 @@
 						</li>
 					</ul>
 
-					<div class=" try" style="position: absolute; bottom:10%;left: 0;">
+					<div class=" try d-none d-lg-block" style="position: absolute; bottom:15%;left: 0;">
 						<ul class="px-1">
 							<li class="nav-item">
 								<a class="nav-link " href="#"
@@ -97,7 +99,7 @@
 						<hr />
             
 					</div>
-           <div style="position: absolute;bottom: 9%;left: 2%;"> <img style="height: 2.1rem;width: 2.1rem;" src="https://www.nj.com/resizer/zovGSasCaR41h_yUGYHXbVTQW2A=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/SJGKVE5UNVESVCW7BBOHKQCZVE.jpg" class="img-fluid rounded" alt="">
+           <div class="d-none d-lg-block" style="position: absolute;bottom: 14%;left: 2%;"> <img class=" mx-2" style="height: 2.1rem;width: 2.1rem;" src="https://www.nj.com/resizer/zovGSasCaR41h_yUGYHXbVTQW2A=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/SJGKVE5UNVESVCW7BBOHKQCZVE.jpg" class="img-fluid rounded" alt="">
                   <span style="font-size: 0.7rem;font-weight: 700;">Diego "Ziba" Banovaz </span> </div>
 				</div>
         </div>
@@ -146,10 +148,12 @@
        <div class="container album-container  ">
          <h2 class="albums mt-5 pt-4 pt-sm-0 mb-2 m-sm-2  ">Albums</h2>
            <div class="row mt-0 mt-sm-4" >              
-               <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+               <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 "> 
+                 <a href="album.html">
                  <img src="https://images-na.ssl-images-amazon.com/images/I/91Ph%2BuTyyxL._AC_SX679_.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
                  <p class="title text-center mt-4 mb-1 mt-md-2"> Bohemian Rhapsody (The Original Soundtrack)</p>
                  <p class=" text-center artist"> Queen</p>
+               </a>
                </div>
                <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0  pl-sm-2">
                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/On_Air_%28album%29.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
@@ -288,6 +292,84 @@
           The band's 1977 album News of the World contained "We Will Rock You" and "We Are the Champions", which have become anthems at sporting events. By the early 1980s, Queen were one of the biggest stadium rock bands in the world. "Another One Bites the Dust" from The Game (1980) became their best-selling single, while their 1981 compilation album Greatest Hits is the best-selling album in the UK and is certified nine times platinum in the US. Their performance at the 1985 Live Aid concert is ranked among the greatest in rock history by various publications. In August 1986, Mercury gave his last performance with Queen at Knebworth, England. In 1991, he died of bronchopneumonia—a complication of AIDS—and Deacon retired in 1997.</p>
     </main>
               </div>
+
+              <nav class="d-none d-sm-block fixed-bottom bg-grey px-2 pt-2 pb-1">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="d-flex">
+                      <div class="ml-2 mr-2">
+                        <img class="cover-sm" src="https://m.media-amazon.com/images/I/812nvM0bG-L._SS500_.jpg" alt="" />
+                      </div>
+                      <div class="d-flex">
+                        <div class="max-height">
+                          <p class="small-white-text">The house of the rising sun</p>
+                          <p class="smallest-grey-text">The Doors</p>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center icon-grey-text">
+                        <i class="far fa-heart pl-3 pr-3 d-none d-lg-block"></i>
+                        <i class="far fa-window-maximize d-none d-lg-block"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 text-center">
+                    <div class="row pt-1 pb-0">
+                      <div class="col-12 pb-2 d-flex justify-content-center">
+                        <div class="d-flex px-4 justify-content-between align-items-center icon-grey-text">
+                          <i class="fas fa-random mx-2"></i>
+                          <i class="fas fa-step-backward mx-2"></i>
+                          <div class="play-pause mx-2">
+                            <i class="far fa-play-circle icon-grey-lg mx-2"></i>
+                          </div>
+                          <i class="fas fa-step-forward mx-2"></i>
+                          <i class="fas fa-redo-alt mx-2"></i>
+                        </div>
+                      </div>
+            
+                      <div class="col-12 to-bottom d-flex justify-content-center align-items-center">
+                        <p class="smallest-grey-text mr-1 current-time">00.00</p>
+                        <input type="range" min="1" max="100" value="0" class="slider" />
+                        <p class="smallest-grey-text ml-1 total-duration">04.16</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 d-flex justify-content-end align-items-center text-right icon-grey-text">
+                    <i class="fas fa-list mx-1"></i>
+                    <i class="far fa-window-restore mx-1"></i>
+                    <i class="fas fa-volume-up mx-1"></i>
+                    <div class="line-sm mr-2 ml-1"></div>
+                  </div>
+                </div>
+              </nav>
+              <nav style="position:fixed;bottom:7.7%;left:0;width: 100%;" class=" d-sm-none text-center bg-grey">
+                <div class="row">
+                  <div class="col-8">
+                    <div class="d-flex">
+                      <div class="ml-2 mr-2">
+                        <img class="cover-sm" src="https://m.media-amazon.com/images/I/812nvM0bG-L._SS500_.jpg" alt="" />
+                      </div>
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="small-white-text text-center">The house of the rising sun</p>
+                          <p class="smallest-grey-text">The Doors</p>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center icon-grey-text">
+                        <i class="far fa-heart pl-3 pr-3 d-none d-lg-block"></i>
+                        <i class="far fa-window-maximize d-none d-lg-block"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 d-flex justify-content-end align-items-center">
+                    <i class="far fa-heart mx-2 icon-grey-lgs"></i>
+                    <div class="play-pause mr-3 ml-4 icon-grey-lg">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+              </nav>
          <!----------------------------------------------------------------------------- PLAYER-------------------------------------------------------------------------------------------->
     <!-- <nav class="fixed-bottom bg-grey p-1 z10 col-12 " style="border-color: rgb( 40, 40,40);">
       <div class="row">
@@ -350,6 +432,7 @@
   
   </script>
     <script src="script.js"></script>
+    <script src="album.js"></script>
 
 
 
