@@ -134,12 +134,13 @@ h2.albums {
 main.mainMarg {
   margin-top: 1rem;
 }
-/* FROM NOW ON CSS OF THE NAV BAR */
+/*--------------------------------------------------------------------------------------- FROM NOW ON CSS OF THE NAV BAR */
 .vertical_navbar {
   background-color: black;
-  position: absolute;
-  left: 0%;
-  min-width: 250px;
+
+  /* position: absolute;
+  left: 0%; */
+  /* min-width: 250px; */
   /* transform: translateX(-100%); */
   /* transition: all 1s ease; */
 }
@@ -174,7 +175,8 @@ div.try:after {
   content: "";
   position: absolute;
   background-color: grey;
-  width: 85%;
+  left: 8%;
+  width: 80%;
   height: 1px;
   bottom: 2rem;
   /*left: 30%; */
