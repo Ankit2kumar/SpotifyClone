@@ -34,6 +34,7 @@ div.song p {
   height: 224px;
   overflow: auto;
   height: 100vh;
+  width: 100%;
 }
 
 .px-45 {
@@ -83,4 +84,56 @@ body > div > div > div > div.col-12.col-md-8 > div {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(136, 136, 136);
+}
+
+/* navbar css */
+.vertical_navbar {
+  background-color: black;
+
+  /* position: absolute;
+  left: 0%; */
+  /* min-width: 250px; */
+  /* transform: translateX(-100%); */
+  /* transition: all 1s ease; */
+}
+a {
+  color: rgb(211, 211, 211);
+}
+.bottom_navbar {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+}
+
+.lower_icons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  list-style-type: none;
+}
+
+/*
+list-style: none // default is disc
+ul padding to 0
+*/
+a:hover {
+  color: white;
+}
+/* hr {
+	/* height: 2px; */
+/* border-bottom: 2px solid white; */
+/* } */
+div.try:after {
+  content: "";
+  position: absolute;
+  background-color: grey;
+  left: 8%;
+  width: 15vw;
+  height: 1px;
+  bottom: 2rem;
+  /*left: 30%; */
+}
+#related img {
+  height: 150px !important;
+  width: 150px !important;
 }
