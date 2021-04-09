@@ -1,20 +1,20 @@
 #home-body{
-    background-color: black; /* For browsers that do not support gradients */ 
+    background-color: black; /*For browsers that do not support gradients*/
     background-image: linear-gradient(to bottom right, rgb(44, 77, 121), rgb(0, 0, 0));
-    background-repeat: no-repeat;
+    background-repeat: none;
     margin: 0;
     padding: 0;
     font-family: proxima-nova, sans-serif;
     font-weight: 700;
     color: rgb(240, 240, 240);
     opacity: 0.9;
-    min-height: 100vh;
+    background-size: 100vh;
+    background-size: 100vw;
 }
 #home-nav{
     padding-top: 10px;
     text-align: center;
-    
-
+    opacity: 0.9;   
 }
 .nav-item{
     padding-left:14px;
@@ -45,8 +45,7 @@
 #home-main-container-trending-one{
     padding: 10px;
     margin: 0px;
-    margin-top: 15px; 
-    
+    margin-top: 15px;    
 }
 #home-main-container-trending-two{
     padding: 10px;
@@ -72,7 +71,8 @@
     padding: 0;
     font-size: x-small;
     font-weight: bolder;
-    position: relative;   
+    position: relative;
+    text-align: left;   
 }
 #logo{
     position: absolute;
@@ -93,9 +93,6 @@
 .img-fluid{
     margin-bottom: 8px; 
 }
-#dog{
-    width: 200%;
-}
 #bieber-banner{
     object-fit: contain;
 }
@@ -107,7 +104,7 @@
     font-weight: 700;
     color: rgb(240, 240, 240);
     box-shadow: 0px 0px 20px 8px rgb(44, 77, 121);
-    
+    opacity: 0.9;
 }
 #podcast-image:hover{
     opacity: 1;
@@ -154,6 +151,8 @@
     position: absolute;
     top: 55%;
     left: 55%;
+}
+#discover-title-one > a{
     font-family: proxima-nova, sans-serif;
     font-weight: 700;
     font-size: xx-large;
@@ -167,8 +166,24 @@
     left: 5%;
     }
 }
-
-#wrapper{
-    transition: all 1s;
-    height: 300px;
+.album-container > p > {
+    text-align: left;
+    
+}
+#bieb-logo{
+    position: absolute;
+    height: 44px;
+    width: 50px;
+    padding-top: 2px;
+    top: 80%;
+    left: 95%;
+}
+#disc-logo{
+    position: absolute;
+    height: 34px;
+    width: 40px;
+    padding-top: 2px;
+    opacity: 0.9;
+    bottom: 5vw;
+    right: 5vw;
 }
