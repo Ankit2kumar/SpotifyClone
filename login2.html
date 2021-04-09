@@ -46,61 +46,58 @@
 				</div>
 			</div>
 		</div> -->
-		<nav class="navbar">
+		<nav class="navbar py-0">
 			<a href="#" class="navbar-brand mx-auto py-0 first">
 				<img
 					src="/assets/Logo.svg"
 					alt="spotify black logo"
-					class="d-inline-block align-top"
-					height="100"
+					class="d-inline-block align-top py-0"
+					height="120"
 				/>
 			</a>
 		</nav>
-		<hr />
+		<hr class="mt-0 py-0" />
 
-		<div class="container-fluid">
+		<div class="container-fluid loginPage">
 			<div class="row d-flex justify-content-center align-items-center">
-				<div
-					id=""
-					class="col-lg-4 col-md-3 d-sm-none d-md-block d-none d-sm-block"
-				></div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="row mt-3">
+				<div class="col-lg-2 d-sm-none d-md-block d-none d-sm-block"></div>
+				<div id="col-2" class="col-lg-8 col-md-6 col-sm-8 col-xs-6">
+					<div class="row mt-1">
 						<div class="col">
 							<button
 								type="button"
-								class="btn btn-lg btn-block"
+								class="btn btn-block py-2"
 								id="facebook"
 								onclick="window.location.href='https://www.facebook.com/'"
 							>
 								<span class="mr-2"><i class="fab fa-facebook"></i></span>
-								<span class="">CONTINUE WITH FACEBOOK</span>
+								<span>CONTINUE WITH FACEBOOK</span>
 							</button>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row mt-1">
 						<div class="col">
 							<button
 								type="button"
-								class="btn btn-lg btn-block"
+								class="btn btn-block py-2"
 								id="apple"
 								onclick="window.location.href='https://appleid.apple.com/'"
 							>
 								<span class="mr-2"><i class="fab fa-apple"></i></span>
-								<span class="">CONTINUE WITH APPLE</span>
+								<span>CONTINUE WITH APPLE</span>
 							</button>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row mt-1">
 						<div class="col">
 							<button
 								type="button"
-								class="btn btn-block"
+								class="btn btn-block py-2"
 								id="google"
 								onclick="window.location.href='https://accounts.google.com/'"
 							>
 								<span class="mr-2"><i class="fab fa-google"></i></span>
-								<span class="">CONTINUE WITH GOOGLE</span>
+								<span>CONTINUE WITH GOOGLE</span>
 							</button>
 						</div>
 					</div>
@@ -123,10 +120,10 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">
+						<div id="emailInput" class="col">
 							<input
 								class="w-100 py-1 d-block-sm d-block-md"
-								type="text"
+								type="email"
 								name=""
 								id="email"
 								placeholder="Email address or username"
@@ -141,7 +138,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">
+						<div class="col" id="passInput">
 							<input
 								type="password"
 								class="w-100 py-1 d-block-sm d-block-md"
@@ -153,21 +150,30 @@
 					</div>
 					<div class="row mt-3">
 						<div class="col">
-							<a href="https://www.spotify.com/de/password-reset/" id="forgot"
+							<a
+								href="https://www.spotify.com/de/password-reset/ "
+								target="_blank"
+								id="forgot"
 								><strong> Forgot your password?</strong></a
 							>
 						</div>
 					</div>
 					<div class="row d-flex justify-content-center">
-						<div class="col mt-4">
-							<input class="py-2" type="checkbox" name="" id="remember_me" />
-							<span id="remember_me_text"><strong> Remember me</strong></span>
+						<div class="col mt-5">
+							<input
+								class="py-1 mr-1"
+								type="checkbox"
+								name=""
+								id="remember_me"
+							/>
+							<span id="remember_me_text" class="text-muted"> Remember me</span>
 						</div>
-						<div class="col mt-3">
+						<div class="col mt-4">
 							<button
 								type="button"
-								class="btn btn-lg btn-block py-2"
+								class="btn btn-lg btn-block py-3"
 								id="log_in"
+								onclick="validateUser()"
 							>
 								<span>LOG IN</span>
 							</button>
@@ -196,13 +202,51 @@
 						</div>
 					</div>
 				</div>
-				<div
-					id=""
-					class="col-lg-4 col-md-3 d-sm-none d-md-block d-none d-sm-block"
-				></div>
+				<div class="col-lg-2 d-sm-none d-md-block d-none d-sm-block"></div>
 			</div>
 		</div>
+		<script>
+			const validateUser = function () {
+				const email = document.querySelector('#email');
+				const password = document.querySelector('#password');
+				const emailInput = document.querySelector('#emailInput');
+				const passInput = document.querySelector('#passInput');
+				const log_in = document.querySelector('#log_in');
+				let swtchCase = '';
+				if (email.value === '') swtchCase = 'eml';
+				if (password.value === '') swtchCase = 'pwd';
+				if (email.value === '' && password.value === '') swtchCase = 'emlPwd';
 
+				switch (swtchCase) {
+					case 'pwd':
+						password.style.border = '1px solid #eb1e32';
+						passInput.innerHTML += `<span style="color:#eb1e32" > Please enter your password.</span>`;
+						break;
+					case 'eml':
+						email.style.border = ' 1px solid #eb1e32';
+						emailInput.innerHTML +=
+							'<span style="color: #eb1e32" >Please enter your Spotify username or email address.</span>';
+						break;
+					case 'emlPwd':
+						email.style.border = ' 1px solid #eb1e32';
+						password.style.border = '1px solid #eb1e32';
+						emailInput.innerHTML +=
+							'<span style="color: #eb1e32" >Please enter your Spotify username or email address.</span>';
+						passInput.innerHTML += `<span style="color:#eb1e32" > Please enter your password.</span>`;
+
+						break;
+				}
+
+				log_in.disabled = 'true';
+				log_in.style.backgroundColor = 'rgb(0, 46, 0)';
+			};
+
+			// let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+			// if (email.value.match(mailformat)) {
+			// }
+			//	};
+		</script>
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
