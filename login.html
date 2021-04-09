@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
+
+		<title>Login - Spotify</title>
+		<link
+			rel="shortcut icon"
+			href="https://accounts.scdn.co/sso/images/favicon.ace4d8543bbb017893402a1e9d1ac1fa.ico"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="login.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+			integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div
+			class="container-fluid px-0 d-flex justify-content-center align-items-center"
+		>
+			<div class="row">
+				<img
+					src="/assets/Logo.svg"
+					alt="spotify_logo"
+					height="50px"
+					class="img-fluid w-100"
+				/>
+			</div>
+		</div>
+
+		<hr />
+
+		<div class="container px-5">
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-10">
+					<div class="login">
+						<div class="container py-3">
+							<div class="row my-2">
+								<button type="button" class="btn-block py-2" id="facebook">
+									<span class="mr-2"><i class="fab fa-facebook"></i></span>
+									<span>CONTINUE WITH FACEBOOK</span>
+								</button>
+							</div>
+							<div class="row my-2">
+								<button type="button" class="btn-block py-2" id="apple">
+									<span class="mr-2"><i class="fab fa-apple"></i></span>
+									<span>CONTINUE WITH APPLE</span>
+								</button>
+							</div>
+							<div class="row my-1">
+								<button type="button" class="btn-block py-2" id="google">
+									<span class="mr-2"><i class="fab fa-google"></i></span>
+									<span>CONTINUE WITH GOOGLE</span>
+								</button>
+							</div>
+
+							<div class="row py-4">
+								<span class="col-5"><hr /></span>
+								<span class="col-1">
+									<span>OR</span>
+								</span>
+								<span class="col-5"><hr /></span>
+							</div>
+							<div class="py-2">
+								<div class="py-1">
+									<strong>Email address or username</strong>
+								</div>
+								<input
+									class="w-100 py-1"
+									type="text"
+									name=""
+									id="email"
+									placeholder="Email address or username"
+								/>
+							</div>
+							<div class="py-1"><strong>Password</strong></div>
+							<input
+								type="password"
+								class="w-100 py-1"
+								name=""
+								id="password"
+								placeholder="Password"
+							/>
+							<div class="row">
+								<a href="https://www.spotify.com/de/password-reset/" id="forgot"
+									><strong> Forgot your password?</strong></a
+								>
+							</div>
+
+							<div class="row d-inline">
+								<input class="py-2" type="checkbox" name="" id="remember_me" />
+								<span id="remember_me_text"><strong> Remember me</strong></span>
+
+								<button type="button" class="btn-block py-2 my-3" id="log_in">
+									<span>LOG IN</span>
+								</button>
+							</div>
+							<div class="row"><hr /></div>
+							<div class="row py-3">
+								<span><strong> Don't have an account?</strong></span>
+							</div>
+							<div class="row">
+								<button
+									type="button"
+									class="btn btn-outline-dark btn-block"
+									id="sign_up"
+								>
+									SIGN UP FOR SPOTIFY
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1"></div>
+			</div>
+		</div>
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
