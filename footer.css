@@ -12,19 +12,28 @@
 
 .icon-grey-text {
   font-weight: 600;
-  color: rgb(155, 155, 155);
+  color: rgb(170, 170, 170);
+  font-size: 12px;
+}
+
+.icon-grey-md {
+  font-weight: 600;
+  color: rgb(196, 196, 196);
   font-size: 10px;
+  /* transform: translateY(5px); */
+  transform: scale(1.6) translateY(6px) translateX(-3px);
 }
 
 .icon-grey-lg {
   font-weight: 600;
-  color: rgb(155, 155, 155);
-  font-size: 22px;
+  color: rgb(170, 170, 170);
+  font-size: 27px;
 }
 
-.px-45 {
-  padding-left: 30px;
-  padding-right: 30px;
+.icon-grey-lgs {
+  font-weight: 600;
+  color: rgb(170, 170, 170);
+  font-size: 18px;
 }
 
 .line {
@@ -35,10 +44,11 @@
 }
 
 .line-sm {
-  height: 2px;
-  width: 25%;
-  background-color: rgb(179, 179, 179);
-  border-radius: 2px;
+  height: 3px;
+  width: 23%;
+  background-color: rgb(170, 166, 166);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .to-bottom {
@@ -83,13 +93,19 @@ i {
 }
 
 .far:hover {
-  color: white;
+  color: rgb(201, 201, 201);
+  transform: scale(1.1);
 }
 
 .far:active {
-  color: rgb(66, 66, 66);
+  color: rgb(136, 136, 136);
 }
 
 .fas:hover {
-  color: white;
+  color: rgb(211, 211, 211);
+}
+
+.cover-sm {
+  height: 50px;
+  width: 50px;
 }

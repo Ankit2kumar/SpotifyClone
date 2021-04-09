@@ -36,6 +36,35 @@ div.song p {
   height: 100vh;
 }
 
+.px-45 {
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+body > div > div > div > div.col-8.rd > div:hover {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    152deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0.06) 0%
+  );
+}
+
+body > div > div > div > div.col-8.rd > div {
+  cursor: pointer;
+}
+
+.max-height {
+  max-height: 50px;
+  overflow-wrap: break-word;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 12px;
