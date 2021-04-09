@@ -146,9 +146,7 @@ h2.albums {
 main.mainMarg {
   margin-top: 1rem;
 }
-main {
-  transition: linear 2sec;
-}
+
 /*--------------------------------------------------------------------------------------- FROM NOW ON CSS OF THE NAV BAR ------------------------------------------------------------------*/
 .vertical_navbar {
   background-color: black;

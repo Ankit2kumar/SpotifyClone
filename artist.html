@@ -113,9 +113,9 @@
           </div>    
        </div>
          <div class="  d-none d-sm-flex container-fluid  justify-content-center z1"style="color: white; position:absolute ;bottom: 1.7rem;left:-1rem" >     
-            <span id="over1" onclick="click1()" class="mr-2 mr-sm-3  highlight z1  ">OVERVIEW</span>
-            <span id="related2" onclick="click2()" class="mr-2 mr-sm-3  highlight ">RELATED ARTISTS</span>
-            <span id="about3" onclick="click3()" class=" highlight ">ABOUT</span>
+            <span id="over10" onclick="click1()" class="mr-2 mr-sm-3  highlight z1  ">OVERVIEW</span>
+            <span id="related20" onclick="click2()" class="mr-2 mr-sm-3  highlight ">RELATED ARTISTS</span>
+            <span id="about30" onclick="click3()" class=" highlight ">ABOUT</span>
          </div>          
      </div>     
     </div>
@@ -290,12 +290,18 @@
         const mainRelated = document.getElementById("related")
         const mainAbout = document.getElementById("about")
         const spanOverview = document.getElementById("over1")
+        const spanOverview1 = document.getElementById("over10")
         const spanRelated = document.getElementById("related2")
+        const spanRelated1 = document.getElementById("related20")
         const spanAbout = document.getElementById("about3")
+        const spanAbout1 = document.getElementById("about30")
         const click1 = function () {
           spanOverview.classList.add("underline")
+          spanOverview1.classList.add("underline")
           spanRelated.classList.remove("underline")
+          spanRelated1.classList.remove("underline")
           spanAbout.classList.remove("underline")
+          spanAbout1.classList.remove("underline")
 
           mainOverview.classList.remove("d-none")
           mainOverview.classList.add("d-block")
@@ -308,8 +314,11 @@
         }
         const click2 = function () {
           spanOverview.classList.remove("underline")
+          spanOverview1.classList.remove("underline")
           spanRelated.classList.add("underline")
+          spanRelated1.classList.add("underline")
           spanAbout.classList.remove("underline")
+          spanAbout1.classList.remove("underline")
 
           mainOverview.classList.remove("d-block")
           mainOverview.classList.add("d-none")
@@ -323,8 +332,11 @@
         }
         const click3 = function () {
           spanOverview.classList.remove("underline")
+          spanOverview1.classList.remove("underline")
           spanRelated.classList.remove("underline")
+          spanRelated1.classList.remove("underline")
           spanAbout.classList.add("underline")
+          spanAbout1.classList.add("underline")
 
           mainOverview.classList.remove("d-block")
           mainOverview.classList.add("d-none")
